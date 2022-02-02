@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<i><div class="header"><h1>Cars & Bikes Showroom</h1></i>
+  <img src="car02.jpg" height= 300 width=100%>
+</div>
+
+<div class="navbar">
+  <a href="#">Menu</a>
+  <a href="#">Car Showroom</a>
+  <a href="#">Bike Shoroom</a>
+  <a href="#" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Car Showroom</h2>
+    <h3>Photo Of Car:</h3>
+    <p>New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com
+</p>
+    <div class="fakeimg" style="height:215px;"><img src="carx.jpg" height= 180 width=100%></div>
+    
+    <h2>Bike Showroom</h2>
+    <h3>Photo Of Bike:</h3>
+    <p>Ferrari S.p.A. (/ f ə ˈ r ɑːr i /; Italian: [ferˈraːri]) is an Italian luxury sports car  
+    the company built its first car in 1940, and produced its first Ferrari-badged car in 1947.</p>
+    
+    <div class="fakeimg" style="height:215px;"><img src="bk02.jpg" height= 180 width=100%></div>
+  
+    </div>
+  <div class="main">
+  
+    <h2>Ferarri</h2>
+    
+    <div class="fakeimg" style="height:250px;"><img src="fer.jpg" height= 220 width=100%></div>
+    
+    <br>
+    <h2>Honda Bike</h2>
+   
+    <div class="fakeimg" style="height:250px;"><img src="ym01.jpg" height= 220 width=100%></div>
+   
+  </div>
+
+<!-- Contact Section -->
+  <div class="container-padding64" id="contact">
+   <h1>Contact</h1><br>
+    <p>We understand your needs and we will cater the  to satisfy the biggerst criteria of them all, Do not hesitate to contact us.</p>
+    <p><b> ABC St, XYZ Town, Karachi</b></p>
+    <p>You can also contact us by phone 0092300-1234567 or email.com, or you can send us a message here:</p>
+    <form>
+      <p><input class="forminput" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="forminput" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="forminput" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="forminput" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="formbutton" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  </div>
+ 
+<!-- End page content -->
+</div>
+
+<div class="footer">
+  <h2>Design By Atif Bangali</h2>
+</div>
+
+</body>
+</html>
